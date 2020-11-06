@@ -8,7 +8,7 @@ switch (comando) {
         let mail = process.argv[4]
         let password = process.argv[5]
         moduloLogin.agregarUsuario(nombre,mail,password)
-        console.log('~~~~~~~~ USUARIO REGISTRADO ~~~~~~~~~')
+        console.log('USUARIO REGISTRADO CON EXITO, YA PUEDE INICIAR SESIÓN')
         break;
         
     case 'login':
@@ -35,7 +35,7 @@ switch (comando) {
             }, 1500)            
         }else {
             
-            console.log('Error el usuario no existe')
+            console.log('¡¡¡ERROR!!! no se puede eliminar, ya que el usuario no existe')
             
         }
             break;
